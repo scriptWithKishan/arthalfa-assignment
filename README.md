@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+Text Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple yet powerful text management application that allows users to replace text, count words and characters, and toggle between dark and light modes. Additionally, the app provides real-time feedback through toast notifications and supports clipboard copying functionality.
+Features
 
-## Available Scripts
+    Word and Character Count: View the total number of words, unique words, and characters in your text.
+    Case-Sensitive Text Replacement: Replace text based on exact case-sensitive matches.
+    Dark Mode/Light Mode Toggle: Switch between light and dark themes.
+    Text Highlighting: Replaced words are highlighted for visual clarity.
+    Real-Time Toast Notifications: Success or error messages are displayed during actions like replacing text.
+    Copy to Clipboard: Copy the entire text to your clipboard with a single click.
 
-In the project directory, you can run:
+Bonus Features
 
-### `npm start`
+    Case-Sensitive Replacement: If the search term does not match the case of the text exactly, a toast notification will inform the user that no case-sensitive match was found.
+    Clipboard Copy: Quickly copy the text to the clipboard by clicking the "Copy to Clipboard" button.
+    Toast Notifications: Success and error messages provide real-time feedback to the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To run this project locally, make sure you have the following installed:
 
-### `npm test`
+    Node.js (v14.x or later)
+    npm or yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Installation
 
-### `npm run build`
+    Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    bash
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+git clone https://github.com/your-username/text-manager.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Navigate to the project directory:
 
-### `npm run eject`
+bash
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd text-manager
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the required dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+bash
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
+Or if you're using yarn:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    yarn install
 
-### Code Splitting
+Running the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    Start the development server:
 
-### Analyzing the Bundle Size
+    bash
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm start
 
-### Making a Progressive Web App
+Or with yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+bash
 
-### Advanced Configuration
+    yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Open your browser and navigate to http://localhost:3000 to view the app.
 
-### Deployment
+Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    Type or paste text into the text area.
+    Use the search and replace fields to find and replace words (case-sensitive).
+    Click the "Replace" button to replace the words.
+    Toggle between dark mode and light mode using the button at the top.
+    View the word, unique word, and character count in the stats section.
+    Copy the text to your clipboard by clicking the "Copy to Clipboard" button.
 
-### `npm run build` fails to minify
+Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    React: For building the user interface.
+    React Icons: For the light and dark mode icons.
+    React Toastify: For real-time notifications.
+    React Copy-to-Clipboard: To copy text to the clipboard.
+    CSS: For styling the application.
