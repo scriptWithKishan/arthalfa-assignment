@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom/cjs/react-router-dom.min";
+import "./App.css";
+import TextManager from "./components/TextManager";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/text-manager" component={TextManager} />
+        <Route path="/not-found" component={NotFound} />
+        <Redirect to="/not-found" />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

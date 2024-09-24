@@ -1,0 +1,161 @@
+@media all and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 100vh;
+    padding: 40px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .replacement-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stats-text {
+    font-size: 15px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .replacement-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .stats-text {
+    font-size: 12px;
+  }
+}
+
+.light-mode {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.replace-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.replace-btn:hover {
+  background-color: #45a049;
+}
+
+.dark-mode input {
+  background: inherit;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  font-size: 16px;
+}
+
+.modified-text {
+  width: 100%;
+  padding: 10px;
+  background: inherit;
+  border: 1px solid #ccc;
+  white-space: pre-wrap;
+  font-size: 16px;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.mode-toggle-btn {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.light-btn {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+.dark-btn {
+  color: #000000;
+  font-size: 40px;
+}
+
+.copy-to-clipboard {
+  align-self: flex-end;
+  margin-bottom: 5px;
+  height: 35px;
+  width: 130px;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
